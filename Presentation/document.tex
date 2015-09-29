@@ -1,4 +1,4 @@
-	\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169]{beamer}
 
 \mode<presentation>
 {
@@ -71,36 +71,18 @@ Würzburg-Schweinfurt
 \beamerdefaultoverlayspecification{<+->}
 
 \begin{document}
-
 % titlepage
 \input{slides/general/titlepage.tex}
-
 % toc
 \input{slides/general/toc.tex}
 
-
-%\begin{frame}
-%\frametitle{}
-
-% You can create overlays
-%\begin{itemize}
-%  \item using the \texttt{pause} command:
-%  \begin{itemize}
-%    \item First item.
-%    \pause
-%    \item Second item.
-%  \end{itemize}
-%  \item using overlay specifications:
-%  \begin{itemize}
-%    \item<3-> First item.
-%    \item<4-> Second item.
-%  \end{itemize}
-%  \item using the general \texttt{uncover} command:
-%  \begin{itemize}
-%    \uncover<5->{\item First item.}
-%    \uncover<6->{\item Second item.}
-%  \end{itemize}
-%\end{itemize}
-%\end{frame}
-
+% Section Gemeinsamkeiten und Unterschiede
+\section{Gemeinsamkeiten und Unterschiede}
+	% Subsection Systemsicherheit
+	\subsection[Systemsicherheit]{Systemsicherheit}
+		\input{slides/gegenueberstellung/systemsicherheit.tex}
+	% Subsection Applikationssicherheit
+	\subsection[Applikationssicherheit]{Applikationssicherheit}
+		\input{slides/gegenueberstellung/applikationssicherheit.tex}
+		\input{slides/gegenueberstellung/appberechtigungen_screens.tex}
 \end{document}
