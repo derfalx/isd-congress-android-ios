@@ -1,20 +1,46 @@
 \begin{frame}
 %\frametitle{Gemeinsamkeiten und Unterschiede}
 %\framesubtitle{Systemsicherheit}
-
-\begin{block}{}
-	Trusted Execution Environment / Secure Enclave
-\end{block}
-\begin{block}{}
-	Secure boot chain
-\end{block}
-\begin{block}{}
-	Userland (Sandboxing / Rechte)
-\end{block}
-
-%\begin{itemize}
-%  \item Trusted Execution Environment / Secure Enclave
-%  \item Secure boot chain
-%  \item Userland (Sandboxing / Rechte)
-%\end{itemize}
+\centering
+	\begin{columns}[T] % contents are top vertically aligned
+    	\begin{column}[T]{5cm} % each column can also be its own environment
+    		\center{\includegraphics[height=0.2\linewidth]{media/graphics/Android_robot.png}}
+    		\begin{block}{}
+				Trusted Execution Environment
+			\end{block}
+    	\end{column}
+    	\begin{column}[T]{5cm}
+    		\center{\includegraphics[height=0.2\linewidth]{media/graphics/Apple_logo_black.png}}
+    		\begin{block}{}
+    			Secure Enclave
+    		\end{block}
+    	\end{column}
+    \end{columns}
+    
+    \begin{columns}[c]
+    	\begin{column}[c]{12cm}
+		    \begin{block}{}
+				\center{Secure boot chain}
+			\end{block}
+		\end{column}
+	\end{columns}
+	
+    \begin{columns}[t]
+    	\begin{column}[t]{5cm}
+    		\begin{block}{}
+				Pro App ein Linux-Nutzer
+			\end{block}
+			\begin{block}{}
+				Isolation durch Kernel
+			\end{block}
+    	\end{column}
+    	\begin{column}[t]{5cm}
+			\begin{block}{}
+				Alle Apps ein Unix-Nutzer
+			\end{block}
+			\begin{block}{}
+				Sandbox pro App definiert
+			\end{block}
+    	\end{column}
+    \end{columns}
 \end{frame}
