@@ -29,12 +29,13 @@
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
 %\author{F.~Author\inst{1} \and S.~Another\inst{2}}
-\author{David Artmann\inst{1} \and Kristoffer Schneider\inst{1}}
+\author{David Artmann \and Kristoffer Schneider}
 
 % - Use the \inst command only if there are several affiliations.
 \institute[Universities of]
 {
-\inst{1}
+%\inst{1}
+\inst{}
 Hochschule für angewandte Wissenschaften\\
 Würzburg-Schweinfurt
 }
@@ -87,9 +88,17 @@ Würzburg-Schweinfurt
 	\input{slides/gegenueberstellung/appberechtigungen_screens.tex}
 	% Subsection Applikationssicherheit
 	%\subsection[Applikationssicherheit]{Applikationssicherheit}	
-\section{Aktuelle Sicherheitslücken}
-	\input{slides/sicherheitsluecken/android.tex}
-	\input{slides/sicherheitsluecken/no-ios-zone.tex}
-	\input{slides/sicherheitsluecken/xcodeghost.tex}
-	\input{slides/sicherheitsluecken/airdrop-exploit.tex}
+\section[Aktuelle Sicherheitslücken]{Aktuelle Sicherheitslücken}
+	\subsection{Android}
+		\input{slides/sicherheitsluecken/android.tex}
+	\subsection{iOS}
+		\input{slides/sicherheitsluecken/no-ios-zone.tex}
+		\input{slides/sicherheitsluecken/xcodeghost.tex}
+		\input{slides/sicherheitsluecken/airdrop-exploit.tex}
+\section{Härten}
+	\subsection{Ratschläge für Entwickler}
+		\input{slides/haerten/entwickler-generell.tex}
+		\input{slides/haerten/entwickler-android-ios.tex}
+	\subsection{Tips für Endnutzer}
+		\input{slides/haerten/endnutzer.tex}
 \end{document}
