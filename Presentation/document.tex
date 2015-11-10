@@ -10,7 +10,7 @@
 \usepackage[ngerman]{babel}
 %Deutsche Umlaute
 \usepackage[utf8]{inputenc}
-%Listen einr�cken
+%Listen einrücken
 \usepackage{enumitem}
 % font definitions, try \usepackage{ae} instead of the following
 % three lines if you don't like this look
@@ -84,21 +84,24 @@ Würzburg-Schweinfurt
 	%\subsection[Systemsicherheit]{Systemsicherheit}
 		%\input{slides/gegenueberstellung/systemsicherheit.tex}
 \section[Applikationssicherheit]{Applikationssicherheit}
-	\input{slides/gegenueberstellung/applikationssicherheit.tex}
-	\input{slides/gegenueberstellung/appberechtigungen_screens.tex}
+	\subsection{Berechtigungen}
+		\input{slides/gegenueberstellung/app-berechtigungen}
+		\input{slides/gegenueberstellung/appberechtigungen_screens}
+	\subsection{Distribution}
+		\input{slides/gegenueberstellung/app-distribution}
 	% Subsection Applikationssicherheit
 	%\subsection[Applikationssicherheit]{Applikationssicherheit}	
 \section[Aktuelle Sicherheitslücken]{Aktuelle Sicherheitslücken}
 	\subsection{Android}
 		\input{slides/sicherheitsluecken/android.tex}
 	\subsection{iOS}
-		\input{slides/sicherheitsluecken/no-ios-zone.tex}
+		%\input{slides/sicherheitsluecken/no-ios-zone.tex}
 		\input{slides/sicherheitsluecken/xcodeghost.tex}
-		\input{slides/sicherheitsluecken/airdrop-exploit.tex}
+		%\input{slides/sicherheitsluecken/airdrop-exploit.tex}
 \section{Härten}
 	\subsection{Ratschläge für Entwickler}
 		\input{slides/haerten/entwickler-generell.tex}
-		\input{slides/haerten/entwickler-android-ios.tex}
+		%\input{slides/haerten/entwickler-android-ios.tex}
 	\subsection{Tips für Endnutzer}
 		\input{slides/haerten/endnutzer.tex}
 \end{document}
